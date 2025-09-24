@@ -1,0 +1,22 @@
+/*
+Q11: Palindrome Number [Easy]
+- Input: 121
+Output: Palindrome
+- Input: 12321
+Output: Palindrome 
+*/
+package week2;
+import java.util.Scanner;
+public class PalindromeNumber {
+	public static void main(String[] args) {
+		 , temp=n, rev=0, digit;
+		while(n>0) {
+			digit = n %10;
+			rev = rev*10 + digit;
+			n /= 10;
+		}
+		if(rev == temp) System.out.println("Palindrome");
+		else System.out.println("Not Palindrome");
+		sc.close();
+	}
+}
